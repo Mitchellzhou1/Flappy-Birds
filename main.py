@@ -13,25 +13,25 @@ pipe_heights = [300, 350, 400, 450, 500]
 
 pygame.init()
 
-game_font = pygame.font.Font("04B_19.ttf", 70)
+game_font = pygame.font.Font("04B_19.TTF", 70)
 
 screen = pygame.display.set_mode((450, 800))
 frames = pygame.time.Clock()
 
-background = pygame.image.load("images/Background.png").convert()
+background = pygame.image.load("pictures/Background.png").convert()
 background = pygame.transform.smoothscale(background, (450, 800))
 
-ground = pygame.image.load("images/ground.png").convert()
+ground = pygame.image.load("pictures/ground.png").convert()
 ground = pygame.transform.scale2x(ground)
 
-bird = pygame.image.load("images/red_bird.png").convert_alpha()
+bird = pygame.image.load("pictures/red_bird.png").convert_alpha()
 bird = pygame.transform.scale2x(bird)
 bird_surface = bird.get_rect(center=(100, 300))
 
-pipes_surface = pygame.image.load("images/pipe.png").convert()
+pipes_surface = pygame.image.load("pictures/pipe.png").convert()
 pipes_surface = pygame.transform.scale2x(pipes_surface)
 
-main_menu = pygame.image.load("images/home.png").convert_alpha()
+main_menu = pygame.image.load("pictures/home.png").convert_alpha()
 main_menu = pygame.transform.scale2x(main_menu)
 
 NEWPIPE = pygame.USEREVENT
